@@ -1,9 +1,9 @@
 while task.wait(3) do
-		LPH_JIT_ULTRA(function()
+	
 			for i,v in pairs(game.Workspace:GetChildren()) do
-				if v:IsA('Model') and v:FindFirstChild('Head') and v:FindFirstChild('HumanoidRootPart') and not IsSleeping(v.Head) then
+				if v:IsA('Model') and v:FindFirstChild('Head') and v:FindFirstChild('HumanoidRootPart') then
 					v.Parent = game.Workspace.Players
 				end
 			end	
-		end)()
+		
 	end
